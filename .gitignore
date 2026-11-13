@@ -1,3 +1,7 @@
 .claude/
 Thumbs.db
 .DS_Store
+
+# 교사용(정답 포함) — 사이트에 올리지 않음
+pdf/
+print.html
