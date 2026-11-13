@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>중1 사회 공부방 안내문</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <style>
+    :root { --ink: #1f2328; --muted: #5f6670; --line: #d9d6cc; --civ: #3d5bb8; --soft: #eef1fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f5f1; color: var(--ink); font-family: "Noto Sans KR", "Malgun Gothic", sans-serif; line-height: 1.6; word-break: keep-all; }
+    .page { max-width: 760px; margin: 24px auto; background: #fff; padding: 36px 40px; border-radius: 14px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+    .head { display: flex; gap: 28px; align-items: center; border-bottom: 3px solid var(--ink); padding-bottom: 22px; }
+    .head h1 { margin: 0 0 6px; font-size: 32px; font-weight: 900; letter-spacing: -0.02em; }
+    .head p { margin: 0; color: var(--muted); }
+    .url { display: inline-block; margin-top: 12px; font-size: 22px; font-weight: 900; color: var(--civ); background: var(--soft); padding: 6px 14px; border-radius: 10px; }
+    #qr { flex: none; width: 180px; height: 180px; }
+    #qr img, #qr canvas { width: 100%; height: 100%; image-rendering: pixelated; }
+    .qr-cap { text-align: center; font-size: 12px; color: var(--muted); margin-top: 4px; }
+    h2 { font-size: 19px; margin: 26px 0 10px; }
+    ol, ul { margin: 0; padding-left: 22px; }
+    li { margin: 6px 0; }
+    b { color: var(--civ); }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .box { border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; }
+    .box h3 { margin: 0 0 6px; font-size: 15px; }
+    .note { background: #fff8e6; border: 1px solid #f0d58c; border-radius: 12px; padding: 12px 16px; margin-top: 22px; font-size: 14.5px; }
+    .print { display: block; margin: 0 auto 30px; padding: 10px 22px; font: inherit; font-weight: 700; border-radius: 999px; border: 0; background: var(--ink); color: #fff; cursor: pointer; }
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; border-radius: 0; padding: 18mm 16mm; }
+      .print { display: none; }
+    }
+    @media (max-width: 600px) {
+      .page { margin: 0; border-radius: 0; padding: 22px 16px; }
+      .head { flex-direction: column-reverse; align-items: flex-start; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="head">
+      <div>
+        <h1>📚 중1 사회 공부방</h1>
+        <p>미래엔 사회① 12개 단원 · 핵심 요약 · 퀴즈 · 서술형 · 용어 카드 · 모의고사</p>
+        <span class="url">social-flax-xi.vercel.app</span>
+      </div>
+      <div>
+        <div id="qr" aria-label="사이트 QR 코드"></div>
+        <div class="qr-cap">휴대폰 카메라로 찍으세요</div>
+      </div>
+    </div>
+
+    <h2>✏️ 이렇게 공부해요</h2>
+    <ol>
+      <li><b>핵심 요약</b>을 읽어요. 굵은 글씨가 시험에 잘 나오는 용어예요.</li>
+      <li><b>퀴즈</b>(O/X·객관식·빈칸)로 개념을 확인해요. 틀린 문제는 <b>오답 노트</b>에 자동으로 모여요.</li>
+      <li><b>서술형 대비</b>에서 학교 시험처럼 답안을 써요. 문장은 꼭 <b>'~다'</b>로 끝내요(아니면 1점 감점).</li>
+      <li><b>용어 카드</b>로 매일 조금씩 외워요. '알아요'를 누른 카드는 1일 → 3일 → 7일 → 14일 뒤에 다시 나와요.</li>
+      <li>시험 전에는 <b>모의고사</b>(7~12단원 · 서·논술형 · 45분)로 실전 연습을 해요.</li>
+    </ol>
+
+    <h2>📱 앱처럼 쓰기 (홈 화면에 추가)</h2>
+    <div class="grid">
+      <div class="box"><h3>아이폰 (Safari)</h3>아래쪽 <b>공유 버튼(□↑)</b> → <b>홈 화면에 추가</b></div>
+      <div class="box"><h3>안드로이드 (Chrome)</h3>오른쪽 위 <b>⋮ 메뉴</b> → <b>홈 화면에 추가</b></div>
+    </div>
+
+    <h2>🔥 매일 목표</h2>
+    <ul>
+      <li>하루 <b>20문제·카드</b>를 풀면 오늘의 목표 달성! 매일 하면 <b>연속 학습일</b>이 늘어나요.</li>
+      <li>단원 카드의 동그라미 숫자는 <b>숙련도</b>예요. 80% 이상이면 '숙련'이에요.</li>
+    </ul>
+
+    <div class="note">
+      ⚠️ 점수·오답·카드 기록은 <b>지금 쓰는 기기의 브라우저에만</b> 저장돼요. 늘 같은 기기·같은 브라우저로 들어오고,
+      시크릿(비공개) 모드는 쓰지 마세요. 자동 채점은 핵심어로 하므로 표현이 달라도 뜻이 맞으면 선생님께 확인받으세요.
+    </div>
+  </div>
+  <button class="print" type="button" onclick="window.print()">🖨 인쇄하기</button>
+
+  <script>
+    (function () {
+      var url = 'https://social-flax-xi.vercel.app/';
+      var box = document.getElementById('qr');
+      try {
+        var qr = qrcode(0, 'M');
+        qr.addData(url);
+        qr.make();
+        box.innerHTML = qr.createImgTag(6, 12, '사이트 QR 코드');
+      } catch (e) {
+        box.textContent = url;
+      }
+    })();
+  </script>
+</body>
+</html>
